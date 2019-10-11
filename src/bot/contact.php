@@ -2,7 +2,7 @@
 error_reporting(-1);
 echo '<pre>'.var_dump($_POST).'</pre>';
 if (isset($_POST['option']) && isset($_POST['email']) && isset($_POST['textarea']) && isset($_POST['date'])) {
-    define('');
+    define('TOKEN', '957014155:AAGCwfifbDIDwvDCcvyD0EyqTbhJNFomY4g');
     function sendTelegram($method, $response)
     {
         $ch = curl_init('https://api.telegram.org/bot' . TOKEN . '/' . $method);

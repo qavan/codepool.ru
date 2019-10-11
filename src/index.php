@@ -13,20 +13,20 @@ require_once 'engine/https.php';
     <meta property="og:title" content="Сайт-портфолио Николая Александрова">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
-    <link rel="icon" type="image/jpeg" sizes="800x800" href="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
-    <link rel="manifest" href="/manifest.json?h=eed4d16da80411bc190c3c04527f71d5">
+    <link rel="icon" type="image/jpeg" sizes="800x800" href="/src/assetssets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
+    <link rel="stylesheet" href="/src/assetssets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
+    <link rel="manifest" href="/src/manifest.jsonjson?h=eed4d16da80411bc190c3c04527f71d5">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asul">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css?h=cfa788754642173dafbd830bd7969fdb">
-    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css?h=cfa788754642173dafbd830bd7969fdb">
-    <link rel="stylesheet" href="/assets/fonts/ionicons.min.css?h=cfa788754642173dafbd830bd7969fdb">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=cfa788754642173dafbd830bd7969fdb">
+    <link rel="stylesheet" href="/src/assetssets/fonts/fontawesome-all.min.css?h=cfa788754642173dafbd830bd7969fdb">
+    <link rel="stylesheet" href="/src/assetssets/fonts/font-awesome.min.css?h=cfa788754642173dafbd830bd7969fdb">
+    <link rel="stylesheet" href="/src/assetssets/fonts/ionicons.min.css?h=cfa788754642173dafbd830bd7969fdb">
+    <link rel="stylesheet" href="/src/assetssets/fonts/fontawesome5-overrides.min.css?h=cfa788754642173dafbd830bd7969fdb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=9392210a302cd19ebe21c19f07c6300e">
+    <link rel="stylesheet" href="/src/assetssets/css/styles.min.css?h=9392210a302cd19ebe21c19f07c6300e">
 </head>
 
 <body>
@@ -35,11 +35,11 @@ require_once 'engine/https.php';
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.php">Главная</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.php">Об опыте и мне</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.php">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/src/index.php">Главная</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/src/about.php">Об опыте и мне</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/src/projects.php.php">Проекты</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/src/contact.php">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/src/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@ require_once 'engine/https.php';
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro" style="padding: 20px 0;">
             <div class="avatar" style="background-image:url(&quot;/assets/img/avatars/testava.png?h=e2cdc2ad4afe5505d7ea79ecb0602974&quot;);"></div>
-            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="/about.php">Обо мне</a>&nbsp;и&nbsp;<a href="/projects.php">проектах</a>&nbsp;где я как-либо связан .</p>
+            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="/src/about.php">Обо мне</a>&nbsp;и&nbsp;<a href="/src/projects.php.php">проектах</a>&nbsp;где я как-либо связан .</p>
             <div class="container">
                 <div class="about-me"></div>
             </div>
@@ -55,9 +55,9 @@ require_once 'engine/https.php';
         <section class="portfolio-block photography" style="background-color: rgba(173,173,173,0.05);padding: 35px 35px;padding-top: 35px;padding-right: 35px;padding-bottom: 35px;padding-left: 35px;">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/it/selfhentailogin_v0.png?h=a39475f19da674dab79e8119b9c841ea"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/it/proxyimporter_v0.png?h=2411a029860d3dbe2c3335fc12a53ad2"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/assets/img/it/testide_v0.png?h=455702031959bb10c5af8a4819f6198f"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/src/assetssets/img/it/selfhentailogin_v0.png?h=a39475f19da674dab79e8119b9c841ea"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/src/assetssets/img/it/proxyimporter_v0.png?h=2411a029860d3dbe2c3335fc12a53ad2"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="/src/assetssets/img/it/testide_v0.png?h=455702031959bb10c5af8a4819f6198f"></a></div>
                 </div>
             </div>
         </section>
@@ -100,7 +100,7 @@ require_once 'engine/https.php';
         <section class="portfolio-block call-to-action border-bottom" style="padding: 20px 0;padding-bottom: 30px;">
             <div class="container">
                 <div class="d-flex justify-content-center justify-content-xl-center align-items-xl-end content">
-                    <h3 class="text-center" style="font-family: Lato, sans-serif;">Я - тот, кого вы ищете?</h3><a class="text-center" href="/contact.php"><button class="btn btn-outline-primary btn-lg" type="button">Да! Хочу связаться!</button></a></div>
+                    <h3 class="text-center" style="font-family: Lato, sans-serif;">Я - тот, кого вы ищете?</h3><a class="text-center" href="/src/contact.php"><button class="btn btn-outline-primary btn-lg" type="button">Да! Хочу связаться!</button></a></div>
             </div>
             <div class="container text-center d-flex float-none justify-content-sm-center align-items-sm-center" style="margin-top: 16px;height: -13px;margin-bottom: -16px;width: 387px;"><a class="social-link mail-border" href="mailto:pro100qavan@gmail.com" style="margin: 0px 5px;background-color: #e3e3e3;"><i class="icon ion-android-mail social-link-icon" style="color: rgba(255,0,0,0.5);"></i><div class="none-effect"></div></a>
                 <a
@@ -131,12 +131,12 @@ require_once 'engine/https.php';
             </div>
         </section>
     </main>
-    <script src="/assets/js/jquery.min.js?h=83e266cb1712b47c265f77a8f9e18451"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js?h=63715b63ee49d5fe4844c2ecae071373"></script>
-    <script src="/assets/js/smart-forms.min.js?h=cfa788754642173dafbd830bd7969fdb"></script>
+    <script src="/src/assetssets/js/jquery.min.js?h=83e266cb1712b47c265f77a8f9e18451"></script>
+    <script src="/src/assetssets/bootstrap/js/bootstrap.min.js?h=63715b63ee49d5fe4844c2ecae071373"></script>
+    <script src="/src/assetssets/js/smart-forms.min.js?h=cfa788754642173dafbd830bd7969fdb"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="/assets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
+    <script src="/src/assetssets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
 </body>
 
 </html>

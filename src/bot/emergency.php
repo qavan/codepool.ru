@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['reason']) && isset($_POST['email']) && isset($_POST['textarea']) && isset($_POST['name'])) {
-    define('');
+    define('TOKEN', '958591561:AAHjyxc2u6wxN7hgFr5JpnZUWhZmkxlmfTA');
     function sendTelegram($method, $response)
     {
         $ch = curl_init('https://api.telegram.org/bot' . TOKEN . '/' . $method);
