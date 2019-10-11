@@ -11,13 +11,15 @@ require_once 'engine/https.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Связаться</title>
-    <meta property="og:title" content="Сайт-порфтолио Николая Александрова">
+    <meta property="og:title" content="Сайт-портфолио Николая Александрова">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
     <link rel="icon" type="image/jpeg" sizes="800x800" href="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
     <link rel="manifest" href="/manifest.json?h=eed4d16da80411bc190c3c04527f71d5">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asul">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css?h=cfa788754642173dafbd830bd7969fdb">
@@ -25,7 +27,7 @@ require_once 'engine/https.php';
     <link rel="stylesheet" href="/assets/fonts/ionicons.min.css?h=cfa788754642173dafbd830bd7969fdb">
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=cfa788754642173dafbd830bd7969fdb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=afcf44971dcefc533d887a79e6df5cd1">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=9392210a302cd19ebe21c19f07c6300e">
 </head>
 
 <body>
@@ -114,6 +116,7 @@ require_once 'engine/https.php';
 </footer>
     <script src="/assets/js/jquery.min.js?h=83e266cb1712b47c265f77a8f9e18451"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js?h=63715b63ee49d5fe4844c2ecae071373"></script>
+    <script src="/assets/js/smart-forms.min.js?h=cfa788754642173dafbd830bd7969fdb"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="/assets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
