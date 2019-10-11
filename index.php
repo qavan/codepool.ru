@@ -29,11 +29,11 @@ require_once 'engine/https.php';
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.html">Главная</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.html">Об опыте и мне</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.html">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.php">Главная</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.php">Об опыте и мне</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.php">Проекты</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@ require_once 'engine/https.php';
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro" style="padding: 20px 0;">
             <div class="avatar" style="background-image:url(&quot;/assets/img/avatars/testava.png?h=e2cdc2ad4afe5505d7ea79ecb0602974&quot;);"></div>
-            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="/about.html">Обо мне</a>&nbsp;и&nbsp;<a href="/projects.html">проектах</a>&nbsp;где я как-либо связан .</p>
+            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="/about.php">Обо мне</a>&nbsp;и&nbsp;<a href="/projects.php">проектах</a>&nbsp;где я как-либо связан .</p>
             <div class="container">
                 <div class="about-me"></div>
             </div>
@@ -94,7 +94,7 @@ require_once 'engine/https.php';
         <section class="portfolio-block call-to-action border-bottom" style="padding: 20px 0;padding-bottom: 30px;">
             <div class="container">
                 <div class="d-flex justify-content-center justify-content-xl-center align-items-xl-end content">
-                    <h3 class="text-center" style="font-family: Lato, sans-serif;">Я - тот, кого вы ищете?</h3><a class="text-center" href="/contact.html"><button class="btn btn-outline-primary btn-lg" type="button">Да! Хочу связаться!</button></a></div>
+                    <h3 class="text-center" style="font-family: Lato, sans-serif;">Я - тот, кого вы ищете?</h3><a class="text-center" href="/contact.php"><button class="btn btn-outline-primary btn-lg" type="button">Да! Хочу связаться!</button></a></div>
             </div>
             <div class="container text-center d-flex float-none justify-content-sm-center align-items-sm-center" style="margin-top: 16px;height: -13px;margin-bottom: -16px;width: 387px;"><a class="social-link mail-border" href="mailto:pro100qavan@gmail.com" style="margin: 0px 5px;background-color: #e3e3e3;"><i class="icon ion-android-mail social-link-icon" style="color: rgba(255,0,0,0.5);"></i><div class="none-effect"></div></a>
                 <a

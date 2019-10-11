@@ -1,12 +1,22 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+error_reporting(-1);
+require_once 'engine/https.php';
+?>
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Hire me - qavan</title>
+    <title>Связаться</title>
+    <meta property="og:title" content="Сайт-порфтолио Николая Александрова">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
     <link rel="icon" type="image/jpeg" sizes="800x800" href="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
+    <link rel="manifest" href="/manifest.json?h=eed4d16da80411bc190c3c04527f71d5">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -27,8 +37,8 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/index.php">Главная</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/about.php">Об опыте и мне</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.php">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact.html">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact.php">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>
@@ -39,15 +49,52 @@
                 <div class="heading">
                     <h2>выйти на связь</h2>
                 </div>
-                <form>
-                    <div class="form-group"><label for="subject">Решение</label><select class="form-control" id="subject" required=""><option value="0" selected="">Выберите решение</option><option value="1">Python GUI</option><option value="2">Pyhton Scrapping(Parsing)</option><option value="3">Python 2/Python Legacy</option><option value="4">Other Legacy</option><option value="404">Другое(в сообщении)</option></select></div>
-                    <div
-                        class="form-group"><label for="email">Email</label><input class="form-control" type="email" id="email" placeholder="Ваша электронная почта" required=""></div>
-            <div class="form-group"><label for="message">Сообщение</label><textarea class="form-control" id="message" placeholder="Вы должны здесь конкретно описать проблему, которую я должен решить" required=""></textarea></div>
+                <form action="/bot/contact.php" method="post">
+                    <div class="form-group"><label for="subject">Решение</label>
+                        <select name="option" class="form-control" id="subject" required=""><option value="0" selected="">Выберите решение</option><option value="1">Python GUI</option><option value="2">Pyhton Scrapping(Parsing)</option><option value="3">Python 2/Python Legacy</option><option value="4">Other Legacy</option><option value="404">Другое(в сообщении)</option></select></div>
+                    <div class="form-group"><label for="email">Email</label>
+                        <input name="email" class="form-control" type="email" id="email" placeholder="Ваша электронная почта" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+                    </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea name="textarea" class="form-control" id="message" placeholder="Вы должны здесь конкретно описать проблему, которую я должен решить" required=""></textarea>
+            </div>
             <div class="form-group">
                 <div class="form-row">
-                    <div class="col-md-6"><label for="hire-date">До «какого» дать вам ответ на это?</label><input class="form-control" id="hire-date" type="date"></div>
+                    <div class="col-md-6"><label for="hire-date">До «какого» дать вам ответ на это?</label><input name="date" class="form-control" id="hire-date" type="date"></div>
                     <div class="col-md-6 button"><button class="btn btn-primary btn-block" type="submit">Отправить</button></div>
+                    <?php
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == '0') {
+                            $txtval = 'Ваш запрос отправлен!';
+                        }
+                        elseif ($_GET['error'] == '1') {
+                            $txtval = 'Ошибка! Заполните все правильно!';
+                        }
+                        else {
+                            $txtval = 'Неизвестная ошибка';
+                        }
+                    echo '<div class="modal-dialog" style="width:502px;max-width:502px">
+                        <div class="modal fade" role="dialog" tabindex="-1" id="contactModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Статус запроса</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                    <div class="modal-body">
+                                        <div class="form-row">
+                                            <div class="col-lg-6">
+                                                <form data-bss-recipient="67b465af92ed4ffdcc0537eaadc6dd61">
+                                                    <div>'.$txtval.'</div></form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
+                    }
+                    ?>
+
                 </div>
             </div>
             </form>
@@ -70,6 +117,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="/assets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
+    <?php
+    if (isset($_GET['error']) and ($_GET['error'] = '0' or $_GET['error'] = '1')) {
+        echo "<script src=\"/assets/js/additional.js\"></script>";
+    }
+    ?>
 </body>
 
 </html>

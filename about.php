@@ -1,3 +1,8 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+error_reporting(-1);
+require_once 'engine/https.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -24,11 +29,11 @@
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Главная</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/about.html">Об опыте и мне</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.html">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.php">Главная</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/about.php">Об опыте и мне</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.php">Проекты</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>

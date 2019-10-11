@@ -1,3 +1,8 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+error_reporting(-1);
+require_once 'engine/https.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -24,11 +29,11 @@
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Главная</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.html">Об опыте и мне</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.html">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded active" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.php">Главная</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.php">Об опыте и мне</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.php">Проекты</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.php">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded active" href="/emergency.php" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>
@@ -39,12 +44,43 @@
                 <div class="heading">
                     <h2>срочная связь</h2>
                 </div>
-                <form style="height: 520px;">
-                    <div class="form-group"><label for="name">Ваше имя</label><input class="form-control item" type="text" id="name" required=""></div>
-                    <div class="form-group"><label for="subject">С чем это связано?</label><input class="form-control item" type="text" id="subject" required=""></div>
-                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email" required=""></div>
-                    <div class="form-group"><label for="message">Сообщение</label><textarea class="form-control item" id="message" autofocus=""></textarea></div>
+                <form style="height: 520px;" action="/bot/emergency.php" method="post">
+                    <div class="form-group"><label for="name">Ваше имя</label><input name="name" class="form-control item" type="text" id="name" required=""></div>
+                    <div class="form-group"><label for="subject">С чем это связано?</label><input name="reason" class="form-control item" type="text" id="subject" required=""></div>
+                    <div class="form-group"><label for="email">Email</label><input name="email" class="form-control item" type="email" id="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"></div>
+                    <div class="form-group"><label for="message">Сообщение</label><textarea name="textarea" class="form-control item" id="message" autofocus=""></textarea></div>
                     <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Отправить</button></div>
+                    <?php
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == '0') {
+                            $txtval = 'Ваш срочный запрос отправлен!';
+                        }
+                        elseif ($_GET['error'] == '1') {
+                            $txtval = 'Ошибка! Заполните все правильно!';
+                        }
+                        else {
+                            $txtval = 'Неизвестная ошибка';
+                        }
+                        echo '<div class="modal-dialog" style="width:502px;max-width:502px">
+                        <div class="modal fade" role="dialog" tabindex="-1" id="contactModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Статус запроса</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                    <div class="modal-body">
+                                        <div class="form-row">
+                                            <div class="col-lg-6">
+                                                <form data-bss-recipient="67b465af92ed4ffdcc0537eaadc6dd61">
+                                                    <div>'.$txtval.'</div></form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
+                    }
+                    ?>
                 </form>
             </div>
         </section>
@@ -65,6 +101,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="/assets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
+    <?php
+    if (isset($_GET['error']) and ($_GET['error'] = '0' or $_GET['error'] = '1')) {
+        echo "<script src=\"/assets/js/additional.js\"></script>";
+    }
+    ?>
 </body>
 
 </html>
