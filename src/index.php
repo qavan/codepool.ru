@@ -47,7 +47,7 @@ require_once 'engine/https.php';
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro" style="padding: 20px 0;">
             <div class="avatar" style="background-image:url(&quot;/assets/img/avatars/testava.png?h=e2cdc2ad4afe5505d7ea79ecb0602974&quot;);"></div>
-            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="about.php">Обо мне</a>&nbsp;и&nbsp;<a href="projects.php.php">проектах</a>&nbsp;где я как-либо связан .</p>
+            <p class="text-center text-dark" style="margin-bottom: 20px;">Меня зовут Николай «qavan» Александров.&nbsp;<br>Являюсь Python разработчиком и не только.&nbsp;<br>&nbsp;<a href="about.php">Обо мне</a>&nbsp;и&nbsp;<a href="projects.php">проектах</a>&nbsp;где я как-либо связан .</p>
             <div class="container">
                 <div class="about-me"></div>
             </div>
@@ -106,7 +106,7 @@ require_once 'engine/https.php';
                 <a
                     class="social-link vk-border" href="https://vk.com/qavan" style="margin: 0px 5px;background-color: #2c5f9a;color: rgb(255,255,255);"><i class="fa fa-vk social-link-icon" style="color: rgba(0,0,0,0.8);"></i>
                     <div class="none-effect"></div>
-                    </a><a class="social-link" href="https:/t.me/qavan" style="margin: 0px 5px;background-color: rgb(14,160,255);"><i class="fa fa-telegram social-link-icon" style="color: rgba(0,0,0,0.8);"></i><div class="none-effect"></div></a><a class="social-link instagram-border"
+                    </a><a class="social-link" href="https://t.me/qavan" style="margin: 0px 5px;background-color: rgb(14,160,255);"><i class="fa fa-telegram social-link-icon" style="color: rgba(0,0,0,0.8);"></i><div class="none-effect"></div></a><a class="social-link instagram-border"
                         href="https://www.instagram.com/intoandroiddreams/" style="margin: 0px 5px;background: linear-gradient(60deg,#f77737,#833ab4);"><i class="fa fa-instagram social-link-icon" style="color: rgba(0,0,0,0.8);"></i><div class="none-effect"></div></a>
                     <a
                         class="social-link githib-border" href="https://github.com/qavan" style="margin: 0px 5px;background-color: rgba(0,0,0,0.8);"><i class="fa fa-github social-link-icon" style="color: #e3e3e3;"></i>
