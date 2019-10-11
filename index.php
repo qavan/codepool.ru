@@ -1,3 +1,8 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+error_reporting(-1);
+require_once 'engine/https.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - qavan</title>
     <link rel="icon" type="image/jpeg" sizes="800x800" href="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=6da2e646ebbfc2c8b8533565239ebe05">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">

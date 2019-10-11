@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Hire me - qavan</title>
+    <title>Contact - qavan</title>
     <link rel="icon" type="image/jpeg" sizes="800x800" href="/assets/img/avatars/avatar.jpg?h=a6dc828db199f191db08f91d9df2b728">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=6da2e646ebbfc2c8b8533565239ebe05">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=cdd1c50020433e1e93b8970029ea55a5">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -27,30 +27,25 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Главная</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/about.html">Об опыте и мне</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/projects.html">Проекты</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact.html">Связаться</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link border rounded" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">Связаться</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border rounded active" href="/emergency.html" style="color: rgb(255,255,255);background-color: #c50101;">Срочная связь</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="page hire-me-page">
-        <section class="portfolio-block hire-me">
+    <main class="page contact-page">
+        <section class="portfolio-block contact">
             <div class="container">
                 <div class="heading">
-                    <h2>выйти на связь</h2>
+                    <h2>срочная связь</h2>
                 </div>
-                <form>
-                    <div class="form-group"><label for="subject">Решение</label><select class="form-control" id="subject" required=""><option value="0" selected="">Выберите решение</option><option value="1">Python GUI</option><option value="2">Pyhton Scrapping(Parsing)</option><option value="3">Python 2/Python Legacy</option><option value="4">Other Legacy</option><option value="404">Другое(в сообщении)</option></select></div>
-                    <div
-                        class="form-group"><label for="email">Email</label><input class="form-control" type="email" id="email" placeholder="Ваша электронная почта" required=""></div>
-            <div class="form-group"><label for="message">Сообщение</label><textarea class="form-control" id="message" placeholder="Вы должны здесь конкретно описать проблему, которую я должен решить" required=""></textarea></div>
-            <div class="form-group">
-                <div class="form-row">
-                    <div class="col-md-6"><label for="hire-date">До «какого» дать вам ответ на это?</label><input class="form-control" id="hire-date" type="date"></div>
-                    <div class="col-md-6 button"><button class="btn btn-primary btn-block" type="submit">Отправить</button></div>
-                </div>
-            </div>
-            </form>
+                <form style="height: 520px;">
+                    <div class="form-group"><label for="name">Ваше имя</label><input class="form-control item" type="text" id="name" required=""></div>
+                    <div class="form-group"><label for="subject">С чем это связано?</label><input class="form-control item" type="text" id="subject" required=""></div>
+                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email" required=""></div>
+                    <div class="form-group"><label for="message">Сообщение</label><textarea class="form-control item" id="message" autofocus=""></textarea></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Отправить</button></div>
+                </form>
             </div>
         </section>
     </main><footer class="text-center">
