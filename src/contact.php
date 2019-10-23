@@ -55,7 +55,7 @@ require_once 'engine/https.php';
                     <div class="form-group"><label for="subject">Решение</label>
                         <select name="option" class="form-control" id="subject" required=""><option value="0" selected="">Выберите решение</option><option value="1">Python GUI</option><option value="2">Pyhton Scrapping(Parsing)</option><option value="3">Python 2/Python Legacy</option><option value="4">Other Legacy</option><option value="404">Другое(в сообщении)</option></select></div>
                     <div class="form-group"><label for="email">Email</label>
-                        <input name="email" class="form-control" type="email" id="email" placeholder="Ваша электронная почта" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+                        <input name="email" class="form-control" type="email" id="email" placeholder="Ваша электронная почта" required="" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
                     </div>
             <div class="form-group">
                 <label for="message">Сообщение</label>

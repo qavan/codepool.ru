@@ -53,7 +53,7 @@ require_once 'engine/https.php';
                 <form style="height: 520px;" action="bot/emergency.php" method="post">
                     <div class="form-group"><label for="name">Ваше имя</label><input name="name" class="form-control item" type="text" id="name" required=""></div>
                     <div class="form-group"><label for="subject">С чем это связано?</label><input name="reason" class="form-control item" type="text" id="subject" required=""></div>
-                    <div class="form-group"><label for="email">Email</label><input name="email" class="form-control item" type="email" id="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"></div>
+                    <div class="form-group"><label for="email">Email</label><input name="email" class="form-control item" type="email" id="email" required="" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"></div>
                     <div class="form-group"><label for="message">Сообщение</label><textarea name="textarea" class="form-control item" id="message" autofocus=""></textarea></div>
                     <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Отправить</button></div>
                     <?php
@@ -110,7 +110,7 @@ require_once 'engine/https.php';
     <script src="assets/js/script.min.js?h=b8b0a9f504fb148126e5da9d464951c4"></script>
     <?php
     if (isset($_GET['error']) and ($_GET['error'] = '0' or $_GET['error'] = '1')) {
-        echo "<script src=\"assets/js/additional.js\"></script>";
+        echo "<script src=\"/assets/js/additional.js\"></script>";
     }
     ?>
 </body>
